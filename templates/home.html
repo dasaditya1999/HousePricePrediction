@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <h1>hey how are you? Welcome to this Brand new Project<h1>
+        <h1>Welcome to this Brand new Boston House Prediction Project<h1>
+            <meta charset="UTF-8">
+            <title>ML API</title>
+            <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <form>
-            
-        </form>
+        <div class="login" text-align='center'>
+            <form action="{{url_for('predict')}}"method="post",text-align='center'>
+                <input type=="text", name="CRIM", placeholder="CRIM",required="required" /><br>
+                <input type=="text", name="ZN", placeholder="ZN",required="required" /><br>
+                <input type=="text", name="INDUS", placeholder="INDUS",required="required" /><br>
+                <input type=="text", name="CHAS", placeholder="CHAS",required="required" /><br>
+                <input type=="text", name="NOX", placeholder="NOX",required="required" /><br>
+                <input type=="text", name="RM", placeholder="RM",required="required" /><br>
+                <input type=="text", name="AGE", placeholder="AGE",required="required" /><br>
+                <input type=="text", name="DIS", placeholder="DIS",required="required" /><br>
+                <input type=="text", name="RAD", placeholder="RAD",required="required" /><br>
+                <input type=="text", name="TAX", placeholder="TAX",required="required" /><br>
+                <input type=="text", name="PTRATIO", placeholder="PTRATIO",required="required" /><br>
+                <input type=="text", name="B1000", placeholder="B1000",required="required" /><br>
+
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            </form>
+
+            <br>
+            <br>
+        </div>
+        {{prediction_text}}
+
     </body>
 </html>
