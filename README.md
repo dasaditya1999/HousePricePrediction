@@ -18,3 +18,7 @@ command - `conda create -p venv python==3.7 -y`
  ### Then push the changes to GitHub.
  ### Now , we can go for the Deployment of the whole application in a Cloud Platform like GCP, AWS, Heroku, Azure etc.
  # Basically we will be doing the deployment of our application in Heroku for now & for that we need a .Proc file at first.
+
+ <!-- WHY docker is imp? -->
+ ## Docker is helpful when you want to run the same app in different platform.
+ ## Docker helps you in contanirising everything into an image & that can be run easily in any platform without any dependency.
